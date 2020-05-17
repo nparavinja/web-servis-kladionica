@@ -1,0 +1,13 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Ticket extends Model
+{
+    //
+    public function parovi() {
+        return $this->hasMany('App\Pair','tiket_id');
+    }
+}
